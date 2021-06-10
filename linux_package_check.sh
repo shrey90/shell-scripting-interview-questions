@@ -1,6 +1,6 @@
 echo enter the package name
 read package
-if dpkg -s $package
+if rpm -q $package
 then
 echo your $package is installed
 else
